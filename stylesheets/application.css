@@ -218,7 +218,8 @@ footer {
       height: 1000px; }
     .sample#herzog .preview .text-to-preview {
       line-height: 50px;
-      font-size: 36px; }
+      font-size: 36px;
+      border: 1px solid #444; }
     .sample#herzog .preview .text-preview {
       line-height: 50px; }
     .sample#herzog .preview .fonttype {
