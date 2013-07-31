@@ -30,32 +30,31 @@ function css2json(css){
 
 $(document).ready(function(){
 
-  $(".text > a").click(function(event){
+  $(".text a").click(function(event){
     event.preventDefault();
-
-    // var $textarea = $("<textarea></textarea>");
-    // var style = css($("h2.asd"));
-    // $textarea.css(style);
-    // $textarea.css({
-    //   'background-color':'transparent'
-    //   ,'height':'250px'
-    //   ,'padding':'10px'
-    //   ,'width':'100%'
-    // });
-    // $textarea.html($("h2.asd").html());
-    // $("h2.asd").replaceWith($textarea);
-
-    $(event.currentTarget).parent().siblings('.preview').addClass('open');
-
+    $(event.currentTarget).parents('.sample').children('.preview').toggleClass('open');
   });
 
-  $("textarea").keypress(function(event){
-    var text = $(event.target).text();
-    alert(text);
-    $(".preview-text").each(function(i,obj){
-      console.log(obj,i);
-      $(obj).html($(event.target).html());
+  $(".text-to-preview").keyup(function(event){
+    var text = $(event.target).val();
+    console.log(text);
+    $(".text-preview").each(function(i,obj){
+      $(obj).html(text);
     });
   });
 
 });
+
+
+
+// var $textarea = $("<textarea></textarea>");
+// var style = css($("h2.asd"));
+// $textarea.css(style);
+// $textarea.css({
+//   'background-color':'transparent'
+//   ,'height':'250px'
+//   ,'padding':'10px'
+//   ,'width':'100%'
+// });
+// $textarea.html($("h2.asd").html());
+// $("h2.asd").replaceWith($textarea);

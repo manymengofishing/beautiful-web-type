@@ -13,7 +13,6 @@ a {
 
 footer {
   padding: 50px;
-  text-align: center;
 
   p {
     color: #555;
@@ -27,6 +26,24 @@ footer {
         color: #000;
       }
     }
+  }
+
+  .github-logo{
+    width:60px;
+    height:15px;
+    background-size:60px 15px;
+    display: inline-block;
+    background-image:url(../img/footer-logo.png);
+    opacity: 0.8;
+  }
+
+  .alignleft{
+    float:left;
+    line-height: 20px;
+  }
+  .alignright{
+    float:right;
+    line-height:37px;
   }
 }
 
@@ -102,11 +119,14 @@ footer {
   }
 
   .preview{
+    width:800px;
+    margin:0 auto;
     height:0;
     transition: all 300ms ease-out;
     overflow: hidden;
     opacity: 0;
     padding-top:100px!important;
+
     &.open{
       opacity: 1;
       height:500px;
@@ -116,21 +136,30 @@ footer {
       text-transform: uppercase;
       font-size:14px;
       color:#191b28;
+      margin-bottom:5px;
     }
 
-    textarea{
-      font-size:40px;
+    .fontname{
+      margin-bottom:30px;
+      font-size:80px;
+      margin-left:0.5%;
+    }
+
+    .text-to-preview{
       background-color:transparent;
-      padding:10px;
-      width:100%;
+      padding:1% 0.5%;
+      width:98%;
       border:1px solid #191b28;
       margin-bottom:30px;
-      height:40px;
+      font-family: inherit;
+      color: inherit;
     }
 
-    .preview-text{
+    .text-preview{
+      font-family: inherit;
+      color: inherit;
       margin: 0px 0 30px 0;
-
+      margin-left:0.5%;
       &.reg400{
         font-weight:400!important;
       }
@@ -146,6 +175,20 @@ footer {
         font-style:italic!important;
       }
     }
+
+    .google-webfont-logo{
+      width:213px;
+      height:35px;
+      background-size:213px 35px;
+      background-image:url(../img/google-web-font-logo.png);
+      display: block;
+      float:right;
+      opacity: 1;
+    }
+  }
+
+  .textalignright{
+    text-align: right;
   }
 
 
@@ -184,15 +227,26 @@ footer {
     }
 
     .preview{
+      font-family: 'cardo';
+      color: #E9E9EB;
+      font-size: 36px;
 
-      .fonttype{
-        color:#888;
+      &.open{
+        height:1000px;
+      }
+      .text-to-preview {
+        line-height: 50px;
+        font-size: 36px;
+      }
+      .text-preview {
+        line-height: 50px;
       }
 
-      textarea, .preview-text{
-        color: #E9E9EB;
-        font-family: 'cardo';
-        font-size: 36px;
+      .fonttype{
+        font-family:arial;
+        font-size:12px;
+        color:#fff;
+        opacity: 0.3;
       }
     }
   }
@@ -256,6 +310,37 @@ footer {
       font: 400 16px/24px 'gentium book basic';
       margin: 0;
     }
+
+    .preview{
+      font-family: 'open sans';
+      color: #222;
+      font-size: 16px;
+
+      &.open{
+        height:600px;
+      }
+      .text-to-preview {
+        font-size: 16px;
+        line-height: 24px;
+        border:1px solid #cd2501;
+      }
+      .text-preview {
+        line-height: 24px;
+      }
+
+      .fonttype{
+        font-family:arial;
+        font-size:12px;
+        color:#000;
+        opacity: 0.5;
+      }
+    }
+
+    .preview:last-child{
+      font-family: 'gentium book basic';
+      .text-to-preview {
+      }
+    }
   }
 
   // Bringhurst quote
@@ -284,6 +369,25 @@ footer {
       letter-spacing: 1px;
       text-transform: uppercase;
       text-indent: -13px;
+    }
+
+    .preview{
+      font-family: 'vollkorn';
+      &.open{
+        height:600px;
+      }
+      .fonttype{
+        color:#aaa;
+        font-size:10px;
+      }
+
+      .text-to-preview{
+        font-size:16px;
+        border:1px solid #ddd;
+      }
+
+      .text-to-preview, .text-preview{
+      }
     }
   }
 
@@ -331,6 +435,33 @@ footer {
 
       &:nth-child(6) {
         opacity: 0.8;
+      }
+    }
+
+    .preview{
+      font-family: 'lato';
+      color: #fff;
+      font-size: 42px;
+      text-transform: uppercase;
+
+      &.open{
+        height:900px;
+      }
+      .text-to-preview {
+        font-size: 42px;
+        text-transform: uppercase;
+        line-height: 42px;
+        border:1px solid #00a3c2;
+      }
+      .text-preview {
+        line-height: 42px;
+      }
+
+      .fonttype{
+        font-family:arial;
+        font-size:12px;
+        color:#000;
+        opacity: 0.6;
       }
     }
   }
@@ -382,6 +513,32 @@ footer {
       margin: 18px 0 0 175px;
       text-transform: uppercase;
     }
+
+    .preview{
+      font-family: 'playfair display';
+      color: #242526;
+      font-size: 42px;
+
+      &.open{
+        height:900px;
+      }
+      .text-to-preview {
+        font-size: 42px;
+        line-height: 42px;
+        border:1px solid #777;
+      }
+      .text-preview {
+        line-height: 42px;
+
+      }
+
+      .fonttype{
+        font-family:arial;
+        font-size:12px;
+        color:#000;
+        opacity: 0.4;
+      }
+    }
   }
 
   // Seneca exerpt
@@ -432,6 +589,30 @@ footer {
     p {
       color: #333;
       font: 400 14px/22px 'merriweather';
+    }
+    .preview{
+      font-family: 'merriweather';
+      color: #242526;
+      font-size: 14px;
+
+      &.open{
+        height:600px;
+      }
+      .text-to-preview {
+        font-size: 14px;
+        border:1px solid #aaa;
+        line-height: 22px;
+      }
+      .text-preview {
+        line-height: 22px;
+      }
+
+      .fonttype{
+        font-family:arial;
+        font-size:12px;
+        color:#000;
+        opacity: 0.4;
+      }
     }
   }
 
@@ -488,6 +669,31 @@ footer {
         margin: 0 2px 0 0;
         position: relative;
         top: 5px;
+      }
+    }
+
+    .preview{
+      font-family: 'vollkorn';
+      font-size: 20;
+      color: #172bae;
+
+      &.open{
+        height:600px;
+      }
+      .text-to-preview {
+        font-size: 20px;
+        line-height: 30px;
+        border:1px solid #ddd;
+      }
+      .text-preview {
+        line-height: 30px;
+      }
+
+      .fonttype{
+        font-family:arial;
+        font-size:12px;
+        color:#000;
+        opacity: 0.5;
       }
     }
   }
@@ -558,6 +764,37 @@ footer {
         margin: 0 60px;
       }
     }
+
+    .preview{
+      font-family: 'oswald';
+      color: #222;
+      font-size: 16px;
+
+      &.open{
+        height:600px;
+      }
+      .text-to-preview {
+        font-size: 16px;
+        line-height: 24px;
+        border:1px solid #ddd;
+      }
+      .text-preview {
+        line-height: 24px;
+      }
+
+      .fonttype{
+        font-family:arial;
+        font-size:12px;
+        color:#000;
+        opacity: 0.5;
+      }
+    }
+
+    .preview:last-child{
+      font-family: 'pt mono';
+      .text-to-preview {
+      }
+    }
   }
 
   // "Don't Die Wondering"
@@ -583,6 +820,33 @@ footer {
       padding: 0 4px;
       text-transform: uppercase;
     }
+
+    .preview{
+      font-family: 'Gravitas One';
+      color: #090909;
+      font-size: 32px;
+      text-align: left;
+
+      &.open{
+        height:860px;
+      }
+      .text-to-preview {
+        font-size: 32px;
+        line-height: 40px;
+        border:1px solid #900;
+      }
+      .text-preview {
+        line-height: 40px;
+      }
+
+      .fonttype{
+        font-family:arial;
+        font-size:12px;
+        color:#000;
+        opacity: 0.5;
+      }
+    }
+
   }
 
   // On the Origin of Species
@@ -629,6 +893,39 @@ footer {
       font-style: italic;
       margin: 0;
     }
+
+    .preview{
+      font-family: 'old standard tt';
+      color: #090909;
+      font-size: 28px;
+      text-align: left;
+      text-transform: uppercase;
+      .fontname{
+        font-size:60px;
+      }
+
+      &.open{
+        height:800px;
+      }
+      .text-to-preview {
+        text-transform: uppercase;
+        font-size: 28px;
+        line-height: 32px;
+        border:1px solid #cbc8bc;
+        text-align: center;
+      }
+      .text-preview {
+        line-height: 32px;
+        text-align: center;
+      }
+
+      .fonttype{
+        font-family:arial;
+        font-size:12px;
+        color:#000;
+        opacity: 0.5;
+      }
+    }
   }
 
   // "Meaning & Structure in Design"
@@ -646,6 +943,40 @@ footer {
     h1 {
       color: #fff;
       font: 400 92px/84px Abril Fatface;
+    }
+
+    .preview{
+      font-family: 'Abril Fatface';
+      color: #fff;
+      font-size: 42px;
+      text-align: left;
+
+      .fontname{
+        font-size:60px;
+      }
+
+      &.open{
+        height:900px;
+      }
+      .text-to-preview {
+        font-size: 42px;
+        line-height: 48px;
+        border:1px solid #333;
+      }
+      .text-preview {
+        line-height: 48px;
+      }
+
+      .fonttype{
+        font-family:arial;
+        font-size:12px;
+        color:#fff;
+        opacity: 0.5;
+      }
+      .google-webfont-logo{
+        background-image:url(../img/google-web-font-logo2.png);
+        opacity: 0.5;
+      }
     }
   }
 
@@ -695,5 +1026,35 @@ footer {
       text-indent: 14px;
     }
   }
+
+    .preview{
+      font-family: 'pt serif';
+      color: #000;
+      font-size: 14px;
+      text-align: left;
+
+      .fontname{
+        font-size:60px;
+      }
+
+      &.open{
+        height:600px;
+      }
+      .text-to-preview {
+        font-size: inherit;
+        line-height: 18px;
+        border:1px solid #ddd;
+      }
+      .text-preview {
+        line-height: 32px;
+      }
+
+      .fonttype{
+        font-family:arial;
+        font-size:12px;
+        color:#000;
+        opacity: 0.35;
+      }
+    }
 }
 
